@@ -2,6 +2,7 @@ import './styles/App.css';
 import Contador from './components/Contador';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Menu from './components/Menu';
+import Facturas from './components/Facturas';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Menu />} />
         <Route path="/gatitos" element={<Contador />} />
-        </Routes>
+        <Route path="facturas/*" element={<Facturas />} />
+      </Routes>
       </BrowserRouter>
     </div>
   );

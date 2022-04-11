@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 
 function Menu() {
   return (
-    <ul> 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
+    <ul> 
       <li>
         <Link to="/Gatitos">Gatitos</Link>
+      </li>
+      <li>
+        <Link to="/Facturas">Facturas</Link>
       </li>
     </ul>
     //preguntar porque anda sin props, y con props no anda(en el ej del prof no anda sino)
