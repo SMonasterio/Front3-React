@@ -1,16 +1,17 @@
-import './App.css';
+import './styles/App.css';
 import Contador from './components/Contador';
-import {browserHistory, Router, Route} from "react-router-3";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Menu from './components/Menu';
 
 function App() {
   return (
     <div className="App">
-      <Router history={browserHistory}> 
-        <Route path="/" component={Menu} />
-{/*         <Route path="/" component={Contador} /> */}
-        <Route path="/gatitos" component={Contador} />
-      </Router>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Menu />} />
+        <Route path="/gatitos" element={<Contador />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
